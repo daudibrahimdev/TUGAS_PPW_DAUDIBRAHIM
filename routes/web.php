@@ -18,9 +18,9 @@ Route::get('/dashboard', function () {
 })->middleware(['auth', 'verified', 'admin'])->name('dashboard');
  
 // User 
-Route::get('/', function () { 
-    return view('dashboard'); 
-})->name('home'); 
+// Route::get('/', function () { 
+//     return view('dashboard'); 
+// })->name('home'); 
 
 
 Route::view('/cek-app-layout', 'layouts.app')->name('test.layout');

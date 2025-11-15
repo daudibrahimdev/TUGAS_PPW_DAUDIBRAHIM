@@ -9,9 +9,11 @@ class ProductController extends Controller
     /**
      * Display a listing of the resource.
      */
+    
     public function index()
     {
-        //
+    // Sesuai Modul 4 (halaman 13), ProductController harus me-return view:
+    return view('products.index');
     }
 
     /**
@@ -19,7 +21,7 @@ class ProductController extends Controller
      */
     public function create()
     {
-        //
+        return view('products.create');
     }
 
     /**
@@ -54,7 +56,7 @@ class ProductController extends Controller
      */
     public function edit(string $id)
     {
-        //
+        return view('products.edit');
     }
 
     /**
@@ -62,7 +64,7 @@ class ProductController extends Controller
      */
     public function update(Request $request, string $id)
     {
-        //
+        
     }
 
     /**
