@@ -109,30 +109,30 @@ block d-xl-none">
     <li class="menu-header small text-uppercase"> 
       <span class="menu-header-text">Master</span> 
     </li> 
-    <li class="menu-item"> 
+    <li class="menu-item @if(request()->routeIs('products.index') || request()->routeIs('category.index') || request()->routeIs('products.create')) active open @endif"> 
       <a href="#" class="menu-link menu-toggle"> 
         <i class="menu-icon tf-icons bx bx-lock-open-alt"></i> 
         <div data-i18n="Authentications">Katalog Produk</div> 
       </a> 
       <ul class="menu-sub"> 
         {{-- tambahan page untuk modul 4 --}}
-        <li class="menu-item"> 
+        <li class="menu-item @if(request()->routeIs('products.index')) active @endif"> 
           <a href="{{ route('products.index')}}" class="menu-link"> 
             <div data-i18n="Basic">Daftar Produk</div> 
           </a> 
         </li> 
-        <li class="menu-item"> 
+        <li class="menu-item @if(request()->routeIs('category.index')) active @endif"> 
           <a href="{{ route('category.index')}}" class="menu-link"> 
             <div data-i18n="Basic">Kelola Kategori</div> 
           </a> 
         </li> 
-        <li class="menu-item"> 
+        <li class="menu-item @if(request()->routeIs('products.create')) active @endif"> 
           <a href="{{ route('products.create')}}" class="menu-link"> 
             <div data-i18n="Basic">Tambah Data</div> 
           </a> 
         </li> 
-        
-  </ul> 
+      </ul> 
+    </li> 
 
   <li class="menu-header small text-uppercase"><span class="menu-header
 text">Transaksi</span></li> 
