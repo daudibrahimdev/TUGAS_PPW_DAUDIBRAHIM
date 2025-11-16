@@ -100,7 +100,7 @@ block d-xl-none">
   <ul class="menu-inner py-1"> 
     <!-- Dashboard --> 
     <li class="menu-item active"> 
-      <a href="/dashboard" class="menu-link"> 
+      <a href="/" class="menu-link"> 
         <i class="menu-icon tf-icons bx bx-home-circle"></i> 
         <div data-i18n="Analytics">Dashboard</div> 
       </a> 
@@ -126,10 +126,7 @@ block d-xl-none">
             <div data-i18n="Basic">Tambah Data</div> 
           </a> 
         </li> 
-        
-  </ul> 
-
-  <li class="menu-header small text-uppercase"><span class="menu-header
+        <li class="menu-header small text-uppercase"><span class="menu-header
 text">Transaksi</span></li> 
     <!-- Cards --> 
     <li class="menu-item"> 
@@ -157,4 +154,5 @@ text">Transaksi</span></li>
         </li> 
       </ul> 
     </li> 
+  </ul> 
 </aside>
