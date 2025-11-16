@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\ProductController;
+use App\Http\Controllers\CategoryController;
 use Illuminate\Support\Facades\Route;
 
 // routing dashboard (M4)
@@ -24,6 +25,9 @@ Route::get('/dashboard', function () {
 
 
 Route::view('/cek-app-layout', 'layouts.app')->name('test.layout');
+// test liat category/index
+// Route::view('/category', 'category.index')->name('test.layout');
+Route::resource('/category', CategoryController::class); 
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');

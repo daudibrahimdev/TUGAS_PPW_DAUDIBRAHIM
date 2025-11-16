@@ -51,5 +51,7 @@ customizer-core-css" />
     <script src="{{ asset('assets/js/main.js') }}"></script> 
     <script src="{{ asset('assets/js/dashboards-analytics.js') }}"></script> 
     <script async defer src="https://buttons.github.io/buttons.js"></script> 
+
+    @stack('scripts') 
   </body> 
 </html> 

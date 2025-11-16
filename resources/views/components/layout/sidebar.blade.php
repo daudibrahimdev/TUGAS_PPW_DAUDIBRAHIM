@@ -118,7 +118,12 @@ block d-xl-none">
         {{-- tambahan page untuk modul 4 --}}
         <li class="menu-item"> 
           <a href="{{ route('products.index')}}" class="menu-link"> 
-            <div data-i18n="Basic">Produk</div> 
+            <div data-i18n="Basic">Daftar Produk</div> 
+          </a> 
+        </li> 
+        <li class="menu-item"> 
+          <a href="{{ route('category.index')}}" class="menu-link"> 
+            <div data-i18n="Basic">Kelola Kategori</div> 
           </a> 
         </li> 
         <li class="menu-item"> 
