@@ -97,24 +97,12 @@
 
             </table>
         </div>
+
+        <!-- Pagination -->
+        <div class="mt-3 d-flex justify-content-center">
+            {{-- pagination backends --}}
+            {{ $products->links('pagination::bootstrap-5') }}
+        </div>
     </div>
 </div>
-
-             <!-- Pagination --> 
-             <div class="card-body"> 
-            <div class="table-responsive text-nowrap"> 
-                <table class="table table-bordered"> 
-                    {{-- ... thead dan tbody dinamis di sini ... --}}
-                </table> 
-            </div> 
-            
-            <div class="mt-3 d-flex justify-content-center"> 
-                {{--  KODE INI OTOMATIS MENGHASILKAN TOMBOL 1, 2, 3, 4, 5 DARI DATABASE --}}
-                {{ $products->links('pagination::bootstrap-5') }} 
-            </div> 
-        </div>
-            {{-- end of pagination --}}
-        </div> 
-    </div> 
-</div> 
 @endsection
